@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyzing… — RepoGuide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/loading.css" />
+</head>
+<body class="loading-page">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">⬡</span>
+        RepoGuide
+      </a>
+    </div>
+  </nav>
+
+  <main class="loading-main">
+    <div class="loading-card">
+      <div class="pulse-ring">
+        <div class="pulse-core">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </div>
+      </div>
+
+      <h2 class="loading-title">Connecting to GitHub…</h2>
+      <p class="loading-repo" id="loading-repo-url">loading…</p>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <div class="steps-list">
+        <div class="loading-step" id="step-1">
+          <span class="step-dot"></span>
+          <span>Fetching repository metadata &amp; tree</span>
+        </div>
+        <div class="loading-step" id="step-2">
+          <span class="step-dot"></span>
+          <span>Reading priority files (README, configs…)</span>
+        </div>
+        <div class="loading-step" id="step-3">
+          <span class="step-dot"></span>
+          <span>Sampling source files</span>
+        </div>
+        <div class="loading-step" id="step-4">
+          <span class="step-dot"></span>
+          <span>Building RAG index</span>
+        </div>
+        <div class="loading-step" id="step-5">
+          <span class="step-dot"></span>
+          <span>AI: architecture, key files, gotchas…</span>
+        </div>
+        <div class="loading-step" id="step-6">
+          <span class="step-dot"></span>
+          <span>AI: start here guide &amp; glossary</span>
+        </div>
+      </div>
+
+      <div class="skeleton-preview">
+        <div class="sk-label">Preview generating…</div>
+        <div class="sk-block wide"></div>
+        <div class="sk-block medium"></div>
+        <div class="sk-row">
+          <div class="sk-block short"></div>
+          <div class="sk-block short"></div>
+          <div class="sk-block short"></div>
+        </div>
+        <div class="sk-block wide"></div>
+        <div class="sk-block medium"></div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="../js/loading.js"></script>
+</body>
+</html>

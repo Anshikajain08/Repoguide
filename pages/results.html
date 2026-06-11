@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RepoGuide — Results</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/results.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">⬡</span>
+        RepoGuide
+      </a>
+      <div class="nav-links">
+        <span class="repo-badge" id="repo-badge-name">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          loading…
+        </span>
+        <a href="../index.html" class="btn-nav">← New Repo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Results header -->
+  <div class="results-header">
+    <div class="results-header-inner">
+      <div class="results-meta">
+        <h1 class="results-title" id="repo-title">Analyzing…</h1>
+        <p class="results-desc" id="repo-desc"></p>
+        <div class="results-tags" id="repo-tags"></div>
+      </div>
+      <div class="results-stats">
+        <div class="rstat"><span class="rstat-val" id="stat-files">—</span><span class="rstat-key">files</span></div>
+        <div class="rstat"><span class="rstat-val" id="stat-langs">—</span><span class="rstat-key">languages</span></div>
+        <div class="rstat"><span class="rstat-val" id="stat-size">—</span><span class="rstat-key">size</span></div>
+        <div class="rstat"><span class="rstat-val" id="stat-stars">—</span><span class="rstat-key">stars</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab bar -->
+  <div class="tab-bar" id="tab-bar">
+    <div class="tab-bar-inner">
+      <button class="rtab active" data-tab="overview">🏗️ Overview</button>
+      <button class="rtab" data-tab="keyfiles">📍 Key Files</button>
+      <button class="rtab" data-tab="gotchas">⚠️ Gotchas</button>
+      <button class="rtab" data-tab="starthere">🚀 Start Here</button>
+      <button class="rtab" data-tab="glossary">📖 Glossary</button>
+      <button class="rtab" data-tab="insights">⚡ Insights</button>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main class="results-main">
+    <section class="tab-content active" id="tab-overview">
+      <div class="skeleton-page">
+        <div class="sk-card"><div class="sk-block wide"></div><div class="sk-block medium"></div><div class="sk-block wide"></div><div class="sk-block short"></div></div>
+        <div class="sk-card"><div class="sk-block medium"></div><div class="sk-block wide"></div></div>
+      </div>
+    </section>
+    <section class="tab-content" id="tab-keyfiles">
+      <div class="skeleton-page">
+        <div class="sk-card"><div class="sk-block wide"></div><div class="sk-block medium"></div></div>
+        <div class="sk-card"><div class="sk-block wide"></div><div class="sk-block short"></div></div>
+      </div>
+    </section>
+    <section class="tab-content" id="tab-gotchas">
+      <div class="skeleton-page">
+        <div class="sk-card"><div class="sk-block wide"></div><div class="sk-block medium"></div></div>
+      </div>
+    </section>
+    <section class="tab-content" id="tab-starthere">
+      <div class="skeleton-page">
+        <div class="sk-card"><div class="sk-block wide"></div><div class="sk-block medium"></div><div class="sk-block short"></div></div>
+      </div>
+    </section>
+    <section class="tab-content" id="tab-glossary">
+      <div class="skeleton-page">
+        <div class="sk-card"><div class="sk-block wide"></div><div class="sk-block medium"></div></div>
+      </div>
+    </section>
+    <section class="tab-content" id="tab-insights">
+      <div class="skeleton-page">
+        <div class="sk-card"><div class="sk-block wide"></div><div class="sk-block medium"></div></div>
+        <div class="sk-card"><div class="sk-block wide"></div><div class="sk-block short"></div></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="../js/results.js"></script>
+</body>
+</html>
