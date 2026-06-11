@@ -4,7 +4,7 @@
 
 RepoGuide helps engineers understand any codebase instantly — without spending days reading through files. Powered by a custom in-browser RAG engine and Groq's LLM API.
 
-![RepoGuide Banner](https://via.placeholder.com/1200x400/0f172a/14b8a6?text=RepoGuide+%E2%80%94+Codebase+Onboarding+AI)
+![RepoGuide Banner](https://drive.google.com/file/d/1U7mhJPjmaBgcR0e6_NR8qFMCk32Sib9Z/view?usp=sharing)
 
 ---
 
